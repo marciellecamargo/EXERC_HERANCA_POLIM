@@ -1,0 +1,40 @@
+//Marcielle Camargo e Luisa Franceli
+<?php
+    class Animal{
+        public $nome;
+        public $id;
+        public $som;
+        public $func;
+
+        public function setSom(){
+            echo "{$this->nome} {$this->som}\n";
+  }
+}
+    Class Cachorro extends Animal{
+        public function Cachorro($nome,$id,$som){
+            $this->nome = $nome;
+            $this->id = $id;
+            $this->som = $som;
+            $this->func= "correr";
+}}
+    Class Cavalo extends Animal{
+        public function Cavalo($nome,$id,$som){
+            $this->nome = $nome;
+            $this->id = $id;
+            $this->som = $som;
+            $this->func = "correr";
+}}
+    Class Preguica extends Animal{
+  public function Preguica($nome,$id,$som){
+            $this->nome = $nome;
+            $this->id = $id;
+            $this->som = $som;
+            $this->func = "escalar arvores";
+}}
+    $cachorro = new Cachorro("chow_chow"," 1 ano","latir");
+        $cachorro->setSom();
+    $cavalo = new Cavalo("mustangue","7 anos","relinchar");
+        $cavalo->setSom();
+    $preguica = new Preguica("preguiça_comum","3 anos","-balir");
+        $preguica->setSom();
+?>
