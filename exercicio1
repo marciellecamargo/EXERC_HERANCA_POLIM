@@ -1,0 +1,43 @@
+//Marcielle Camargo e Luisa Franceli
+<?php
+class Veiculo{
+  public $mod;
+  public $vel;
+  public $passag;
+  public $combust;
+}
+    class Carro extends Veiculo{
+        public $portas;
+        public $ano;
+
+    public function Carro($mod,$vel,$passag,$combust,$port,$ano){
+        $this->mod = $mod;
+        $this->vel = $vel;
+        $this->passag = $passag;
+        $this->combust = $combust;
+        $this->port = $port;
+        $this->ano = $ano;
+}
+
+}
+    class Aviao extends Veiculo{
+        public $u;
+        public $tip;
+
+    public function aviao($mod,$vel,$passag,$combust,$u,$tip){
+        $this->mod = $mod;
+        $this->vel = $vel;
+        $this->passag = $passsag;
+        $this->combust = $combust;
+        $this->u = $u;
+        $this->tip = $tip;
+}}
+    $car1 = new Carro("palio","180 KM/h",5,"50 litros",4, 2001);
+    $car2 = new Carro("onix","210 KM/h",5,"35 litros",2,2002);
+        print_r ($car1);
+        print_r ($car2);
+    $aviao1 = new Aviao("airbus a380","2000 KM/h",300,"3577 litros","transporte","comercial");
+    $aviao2 = new Aviao("airbus a320","1825 KM/h",250,"2467 litros","transporte","comercial");
+        print_r ($aviao1);
+        print_r ($aviao2);
+?>
