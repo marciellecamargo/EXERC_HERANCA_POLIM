@@ -1,0 +1,59 @@
+//Marcielle Camargo e Luisa Franceli
+
+<?php
+
+    class Veterinario{
+        public $vet;
+        public function examina($anim){
+            echo "examinando $anim \n";
+            $this->vet = true;
+   
+  }
+}
+    class Animal{
+        public $nome;
+        public $id;
+        public $som;
+        public $func;
+
+        public function setSom(){
+
+            echo "{$this->nome} {$this->som}\n";
+  }
+}
+    Class Cachorro extends Animal{
+        public function Cachorro($nome,$id,$som){
+            $this->nome = $nome;
+            $this->id = $id;
+            $this->som = $som;
+            $this->func = "correr";
+}}
+    Class Cavalo extends Animal{
+        public function Cavalo($nome,$id,$som){
+            $this->nome = $nome;
+            $this->id = $id;
+            $this->som = $som;
+            $this->func = "correr";
+}}
+    Class Preguica extends Animal{
+        public function Preguica($nome,$id,$som){
+            $this->nome = $nome;
+            $this->id = $id;
+            $this->som = $som;
+            $this->func= "escalar arvores";
+}}
+    $exame = new Veterinario;
+    $anim = new Cachorro("chow_chow","1 ano","latir");
+        $exame -> exame($anim->nome);
+            if ($exame->vet == true){
+            $anim->setSom();
+ }
+    $anim2= new Cavalo("mustangue","7 anos","relinchar");
+        $exame->exame($anim2->nome);
+        if ($exame->vet == true){
+        $anim2->setSom();}
+    $anim3= new Preguica("preguiça_comum","3 anos","balir");
+        $exame->exame($anim3->nome);
+        if ($exame->vet == true){
+        $a3->setSom();}
+?>
